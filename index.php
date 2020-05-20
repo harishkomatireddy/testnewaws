@@ -1,3 +1,11 @@
+<?php 
+header("Content-type: application/json");
+        header("Access-Control-Allow-Credentials: true");
+        header("Access-Control-Allow-Origin: ". str_replace('.', '-','https://m.xappie.com/') .".cdn.ampproject.org");
+        header("AMP-Access-Control-Allow-Source-Origin: " . $domain_url);
+        header("Access-Control-Expose-Headers: AMP-Access-Control-Allow-Source-Origin");
+?>
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="style.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
