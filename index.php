@@ -1,7 +1,7 @@
 <?php 
 header("Content-type: application/json");
         header("Access-Control-Allow-Credentials: true");
-        header("Access-Control-Allow-Origin: ". str_replace('.', '-','https://m.xappie.com/') .".cdn.ampproject.org");
+        header("Access-Control-Allow-Origin: ". str_replace('.', '-','http://local.amp.com/') .".cdn.ampproject.org");
         header("AMP-Access-Control-Allow-Source-Origin: " . $domain_url);
         header("Access-Control-Expose-Headers: AMP-Access-Control-Allow-Source-Origin");
 ?>
